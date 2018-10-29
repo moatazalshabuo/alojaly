@@ -1,0 +1,390 @@
+/************** الراس *******/
+*{
+    box-sizing: border-box
+}
+body{
+    font-family:sans-serif;
+    z-index: 1;
+    outline: none;
+}
+.clear {
+    clear: both;
+}
+.center{
+    width: 1100px;
+    margin: auto;
+}
+.scroll
+{ background-color:#70cbce;
+    height: 60px;
+    border-radius: 5px;
+    position: fixed;
+    width: 100%;
+    display: none;
+    z-index: 2;
+    opacity: .9}
+.scroll:hover{opacity: 1;}
+.scroll .head_one{
+    position: relative;
+    bottom: 10px}
+header.top{
+    height: 655px;
+    background-image: url(header-bg.jpg);
+    background-size: cover;}
+.head_one
+{position: relative;
+    display: flex;}
+header.top .head_one a,.scroll .head_one a  ,header.top .head_one nav li, .scroll .head_one nav li{
+    float: left;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    text-shadow: 1px 1px 2px black;}
+.scroll .head_one a,.scroll .head_one nav li{
+   text-shadow: 1px 1px 2px white; 
+}
+header.top .head_one a span,.scroll .head_one a span {
+    text-decoration:underline;
+    font-size: 45px;
+    
+}
+header.top .head_one nav,.scroll .head_one nav {
+    margin-top: 10px;
+    float: right;
+}
+header.top .head_one nav li,.scroll .head_one nav li
+{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px
+}
+header.top .head_tow
+{
+    text-align: center;
+    color: white;
+    padding: 30px;
+    margin-top: 100px;
+    text-shadow: 1px 1px 2px black;
+    perspective: 500px;
+    perspective-origin: 50% 50%;
+    display: flex;
+}
+header.top .head_tow h1
+{
+    padding: 25px;
+    font-size: 50px;
+    font-weight:1500
+}
+header.top .head_tow p
+{
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+header.top .head_tow button
+{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px;
+    border: 0px;
+    outline: none;
+    font-size: 15px;
+    transition: 1s ease;
+}
+header.top .head_tow button:first-of-type{
+    background-color: white;
+}
+header.top .head_tow button:nth-of-type(2)
+{
+    background-color: aquamarine;
+    color: white;
+}
+header.top .head_tow button:first-of-type:hover{ transform: translateZ(15px);
+    transform: rotateY(30deg);
+    
+  }
+header.top .head_tow button:nth-of-type(2):hover{
+    transform: translateZ(15px);
+    transform: rotateY(-30deg);
+  
+}
+header.top .head_tow .animation
+{
+    width: 25px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid white;;
+    position: relative;
+    left: 49%;
+    top: 40px;
+    opacity: 0.7
+}
+header.top .head_tow .animation span{
+    width: 3px;
+    position:absolute;
+    height: 10px;
+    background-color: white;
+    left: 45%;
+    top: 40%;
+    animation: move 1.5s ease-in-out infinite;
+}
+@keyframes move{
+    0%{
+        top:0%;
+        opacity:1; 
+    }
+   
+   100% {
+        top:60%;
+        opacity: 0;
+    }
+}
+/*----------------- header end--------------*/
+.futher_of_section_one{
+    width: 100%;
+    height: 870px;
+    overflow: hidden;
+}
+section.one {
+    
+    background-image: url(be-the-first-bg.jpg);
+    text-align: center;
+    height: 660px;
+    background-size: cover;
+    padding-top:5%;
+    background-attachment: fixed;
+    display: flex;
+}
+
+.futher_of_section_one section.one .one_text
+{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 60px
+}
+.futher_of_section_one section.one .one_text h1 {
+    padding: 10px;
+    font-size: 40px;
+    font-weight:1500;
+    text-shadow: 1px 1px 8px black;
+}
+.futher_of_section_one section.one .one_text p{
+    font-size:20px;
+    text-shadow: 1px 1px 8px black;
+}
+.futher_of_section_one section.one .one_img{
+    overflow: hidden
+}
+.futher_of_section_one section.one .one_img img {
+    width: 480px;
+    height: 600px;
+transform: translate(0,100px);
+    transition: 1s ease-in-out;
+}
+/*------------- end one section ---------*/
+section.tow {
+    height: 660px;
+    display: flex;
+}
+section.tow .center
+{display: flex;
+justify-content: space-between;
+flex-wrap: wrap}
+section.tow .center div
+{ width: 320px;
+    padding: 15px;
+}
+section.tow .center div:first-of-type hr
+{ background-color: #6d3f96;
+    height: 4px;
+    border: 0px;}
+section.tow .center div:nth-of-type(2) hr
+{   background-color: #70cbce;
+    height: 4px;
+    border: 0px}
+section.tow .center div:last-of-type hr
+{    background-color: #fdc05d;
+    height: 4px;
+    border: 0px}
+section.tow .center div h3
+{ padding: 10px;
+    padding-left: 0px
+}
+section.tow .center div p{
+    padding: 10px;
+    padding-left: 0px;
+    opacity: 0.5;}
+/*-------------------- stat three----------*/
+section.three {
+    background-color: #70cbce;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    overflow: hidden;
+    height: 800px;
+    display: flex
+}
+section.three h2{font-size: 40px; margin-bottom: 0;text-shadow: 1px 1px 4px}
+section.three p:{margin-top: 2;text-shadow: 1px 1px 4px;}
+section.three  .flex{
+    display: flex;justify-content: center; flex-wrap: wrap;
+}
+section.three .flex article:first-of-type ,section.three .flex article:last-of-type{
+    flex-grow: 2;
+    height: 470px;
+}
+section.three article{
+    width: 30%;
+    margin-top: 60px;
+    transition: all .5s ease-in-out;
+     background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+section.three article:nth-of-type(2){
+ margin-top: 40px;
+    flex-grow: 1;
+    height: 500px
+}
+section.three article:hover{
+   transform: translate(0,-12px); 
+   
+}
+section.three article div:first-of-type {
+    padding: 10px;
+    background-color: #231f20;
+     border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+section.three article div:first-of-type h5{
+    margin: 10px;
+    margin-bottom: 50px
+}
+section.three article div:first-of-type span{
+    color:darkgrey;
+    opacity: .9;
+    font-size: 30px;
+}
+section.three article div:last-of-type{
+    color: black;
+    padding: 10px;
+}
+section.three article div:last-of-type p{
+    opacity: 0.6
+}
+section.three article div:last-of-type a{
+    color: black;
+    text-decoration: none;
+}
+section.three article div:last-of-type li{
+    list-style-type: none;
+    margin: 0px;
+    font-weight:600 ;
+    padding: 15px;
+    border-top:1px solid rgba(0,0,0,0.2);
+    
+}
+section.three article div:last-of-type ul{
+    padding: 5px;
+    margin: 0;
+    width: 100%
+}
+section.three article div:last-of-type li:last-of-type a{
+    color: #70cbce;
+}
+/*--------------section four---------*/
+
+section.four {
+    text-align: center;
+    padding: 120px;
+    color: #3b3535;
+    background-color: rgba(226, 224, 224, 0.5);
+    padding: 150px;
+    display: flex
+}
+section.four .center i{
+    color:#70cbce;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #70cbce;
+    border-radius: 50%;
+    padding-top: 5px
+}
+section.four input
+{
+    width: 300px;
+    height: 50px;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+section.four button{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color:#70cbce;
+    border-radius: 6%
+}
+/*----------------info------------*/
+section.info{
+    display: flex;
+}
+section.info .center
+{
+    padding: 30px;
+    text-align: center;
+}
+section.info .center div{
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+    margin: auto;
+     margin-bottom: 40px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+section.info .center h1{
+    float: left;
+    position: absolute;
+    top: -10%;
+text-align: center;
+width: 140px;
+height: 60px;
+font-size: 40px;}
+section.info .center p{
+    width: 550px;
+    text-align: left;
+    position: relative;
+  left: 26%;
+    opacity: 0.8;
+    float: left
+}
+section.info .center a{
+    text-decoration: none;
+    color: black;
+    opacity: .4
+}
+/*------------foter-----------*/
+footer{
+    display: flex;
+}
+footer .center .left_foter{
+    float: left;
+     opacity: .7;
+}
+footer .center .left_foter p{
+    float: left;
+    margin-top: 10pxpx
+}
+footer .center .right_foter{
+    float: right;
+    direction: rtl;
+    opacity: .7
+}
+footer .center .left_foter i{
+    margin-left: 5px;
+    margin-top: 17px
+}
